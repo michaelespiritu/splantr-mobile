@@ -1,0 +1,192 @@
+/*Import Font*/
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://themes.googleusercontent.com/static/fonts/lato/v6/nQhiC-wSiJx0pvEuJl8d8A.eot);
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/nQhiC-wSiJx0pvEuJl8d8A.eot) format('embedded-opentype'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url(http://themes.googleusercontent.com/static/fonts/lato/v6/sBtfDPlEIwvKKU53nAG7AQ.eot);
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/sBtfDPlEIwvKKU53nAG7AQ.eot) format('embedded-opentype'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot);
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot) format('embedded-opentype'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzHZ2MAKAc2x4R1uOSeegc5U.eot);
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzHZ2MAKAc2x4R1uOSeegc5U.eot) format('embedded-opentype'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXZ2MAKAc2x4R1uOSeegc5U.eot);
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXZ2MAKAc2x4R1uOSeegc5U.eot) format('embedded-opentype'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+/*End Import Font */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td
+{
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+:focus
+{/* remember to define focus styles! */
+  outline: 0;
+}
+strong
+{
+  font-weight: bold;
+}
+/* remove border around images in IE8/IE9 */
+img
+{
+  border-style: none;
+  vertical-align: top;
+}
+/* Extra styles for alignment of images. By: http://line25.com/tutorials/how-to-create-your-own-custom-wordpress-theme
+----------------*/
+
+/*--- CONTENT STYLE--*/
+h1
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 37px;
+  font-weight:400;    
+}
+h2
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 29px;
+  font-weight:400;  
+}
+h3
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;  
+  font-weight:400;  
+}
+h4
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 21px;  
+  font-weight:300;
+}
+h5
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;  
+  font-weight:400;
+}
+h6
+{
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;  
+  font-weight:400;
+  color:white;
+}
+p
+{
+  font-family: 'Open Sans', sans-serif;
+  margin: 10px 0px;
+  line-height: 25px;
+}
+a, a:visited, a:active, a:link
+{
+  color: inherit;
+  text-decoration: none;
+}
+
+body div[data-role="page"]{
+	  background-image: url('http://www.splantr.com/wp-content/themes/mgpe/images/bg.png');
+}
+html .ui-bar-b .ui-btn.ui-btn-active, .ui-bar-b .ui-btn:focus{
+	background-color: #333 /*{b-bup-background-color}*/;
+  	border-color: #1f1f1f /*{b-bup-border}*/;
+  	color: #fff /*{b-bup-color}*/;
+  	text-shadow: 0 /*{b-bup-shadow-x}*/ 1px /*{b-bup-shadow-y}*/ 0 /*{b-bup-shadow-radius}*/ #111 /*{b-bup-shadow-color}*/;
+}
+
+.thumbnail{
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.text-center{
+  text-align: center; 
+}
+
+
+/*************START OF HOME STYLE*************/
+
+#home .ui-controlgroup-controls {
+	padding: 5%;
+}
+#home .ui-controlgroup-controls  a{
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+#home .logo{
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  max-width: 250px;
+}
+
+/*************START OF HOME STYLE*************/
+.info img, .info iframe{
+	width: 100%;
+  height: auto;
+  margin-top: 5px;
+}
+
+.info p{
+	margin-top: 0px;
+}
+.info h2{
+	margin-bottom: 0px;
+}
+
+.blog-content img{
+	width: 100%;
+}

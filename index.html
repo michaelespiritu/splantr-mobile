@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>View Source</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<link rel="stylesheet" href="_/css/jquery.mobile.css" />
+	<script src="_/js/jquery.js"></script>
+	<script src="_/js/jquery.mobile.js"></script>
+
+	<script src="_/js/script.js"></script>
+	<link rel="stylesheet" href="_/css/style.css" />
+
+</head>
+<body>
+	
+	<div id="home" data-role="page">
+		<div data-role="header"  data-position="fixed" data-theme="b">
+			<h1>Splantr</h1>
+		</div><!-- header -->
+		<div data-role="content" class="text-center">
+			<div data-role="controlgroup" class="ui-alt-icon">
+				<img src="_/images/logo.png" alt="splantr" class="logo">
+				<a href="#home" data-transition="slide" data-role="button"  data-icon="home" data-iconpos="right">Home</a>	
+				<a href="#confessions" data-transition="slide" data-role="button" data-icon="eye" data-iconpos="right">Confessions</a>	
+				<a href="#blogs" data-transition="slide" data-role="button"  data-icon="comment" data-iconpos="right">Blog</a>	
+				<a href="#news" data-transition="slide" data-role="button" data-icon="info" data-iconpos="right">News</a>
+			</div>
+		</div>
+
+	</div><!-- home -->
+
+	<div id="confessions" data-role="page">
+		<div data-role="header" data-theme="b">
+			<h1>Confessions</h1>
+			<a href="#home" data-icon="home" data-iconpos="notext" data-transition="slide">Home</a>
+		</div><!-- header -->
+
+		<div data-role="content" id="dataconfess">
+			
+		</div><!-- content -->
+
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<div data-role="navbar" >
+				<ul>
+					<li><a href="#home" data-transition="slide" data-role="button"  data-icon="home" data-iconpos="top">Home</a></li>	
+					<li><a href="#confessions" data-transition="slide" data-role="button" data-icon="eye" data-iconpos="top">Confessions</a></li>	
+					<li><a href="#blogs" data-transition="slide" data-role="button"  data-icon="comment" data-iconpos="top">Blog</a></li>	
+					<li><a href="#news" data-transition="slide" data-role="button" data-icon="info" data-iconpos="top">News</a></li>
+				</ul>	
+			</div>
+		</div><!-- footer -->
+	</div><!-- confessions -->
+
+	<div id="blogs" data-role="page">
+		<div data-role="header" data-theme="b">
+			<h1>Blog</h1>
+			<a href="#home" data-icon="home" data-iconpos="notext" data-transition="slide">Home</a>
+		</div><!-- header -->
+		
+		<div data-role="content" id="datablog">
+			
+		</div><!-- content -->
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<div data-role="navbar" >
+				<ul>
+					<li><a href="#home" data-transition="slide" data-role="button"  data-icon="home" data-iconpos="top">Home</a></li>	
+					<li><a href="#confessions" data-transition="slide" data-role="button" data-icon="eye" data-iconpos="top">Confessions</a></li>	
+					<li><a href="#blogs" data-transition="slide" data-role="button"  data-icon="comment" data-iconpos="top">Blog</a></li>	
+					<li><a href="#news" data-transition="slide" data-role="button" data-icon="info" data-iconpos="top">News</a></li>
+				</ul>	
+			</div>
+		</div><!-- footer -->
+	</div><!-- Blog -->
+
+	<div id="news" data-role="page">
+		<div data-role="header" data-theme="b">
+			<h1>News</h1>
+			<a href="#home" data-icon="home" data-iconpos="notext" data-transition="slide">Home</a>
+		</div><!-- header -->
+
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<div data-role="navbar" >
+				<ul>
+					<li><a href="#home" data-transition="slide" data-role="button"  data-icon="home" data-iconpos="top">Home</a></li>	
+					<li><a href="#confessions" data-transition="slide" data-role="button" data-icon="eye" data-iconpos="top">Confessions</a></li>	
+					<li><a href="#blogs" data-transition="slide" data-role="button"  data-icon="comment" data-iconpos="top">Blog</a></li>	
+					<li><a href="#news" data-transition="slide" data-role="button" data-icon="info" data-iconpos="top">News</a></li>
+				</ul>	
+			</div>
+		</div><!-- footer -->
+	</div><!-- news -->
+
+	<div id="showpost" data-role="page">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1 class="post-title">Post</h1>
+			<a href="#" class="post-link" data-icon="back" data-iconpos="notext" data-transition="slide">back</a>
+		</div><!-- header -->
+		<div data-role="content" id="mypost" class="info">
+			
+		</div><!-- content -->
+		<div data-role="footer"  data-theme="b">
+			<div data-role="navbar" >
+				<ul>
+					<li><a href="#home" data-transition="slide" data-role="button"  data-icon="home" data-iconpos="top">Home</a></li>	
+					<li><a href="#confessions" data-transition="slide" data-role="button" data-icon="eye" data-iconpos="top">Confessions</a></li>	
+					<li><a href="#blogs" data-transition="slide" data-role="button"  data-icon="comment" data-iconpos="top">Blog</a></li>	
+					<li><a href="#news" data-transition="slide" data-role="button" data-icon="info" data-iconpos="top">News</a></li>
+				</ul>	
+			</div>
+		</div><!-- footer -->
+	</div><!-- showblog -->
+
+
+
+	<script src="http://www.splantr.com/api/get_posts/?post_type=confessions&callback=listPosts" type="text/javascript"></script>
+	<script src="http://www.splantr.com/?json=get-post&callback=listBlog" type="text/javascript"></script>
+</body>
+</html>
