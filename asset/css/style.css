@@ -155,7 +155,11 @@ html .ui-bar-b .ui-btn.ui-btn-active, .ui-bar-b .ui-btn:focus{
   text-align: center; 
 }
 
-
+.loading{
+  width: 15%!important;
+  height: auto;
+  margin: 0 auto;
+}
 /*************START OF HOME STYLE*************/
 
 #home .ui-controlgroup-controls {

@@ -21,6 +21,7 @@ function listPosts(data){
 function showconfess(id){
 	$('.post-title').html('Confessions');
 	$('.post-link').attr('href', '#confessions');
+	$('#mypost').html('<h1 class="text-center">LOADING</h1><p class="text-center"><img src="./asset/images/nyan-nyan-cat.gif" alt="loading" class="loading"></p>');
 	$.getJSON('http://www.splantr.com/?json=get_post&post_id='+ id +'&post_type=confessions&callback=?', function(data){
 		var output = '';
 		output += '<h2>' + data.post.title + '</h2>';
@@ -50,6 +51,7 @@ function listBlog(data){
 function showblog(id){
 	$('.post-title').html('Blog');
 	$('.post-link').attr('href', '#blogs');
+	$('#mypost').html('<h1 class="text-center">LOADING</h1><p class="text-center"><img src="./asset/images/nyan-nyan-cat.gif" alt="loading" class="loading"></p>');
 	$.getJSON('http://www.splantr.com/?json=get_post&post_id='+ id +'&callback=?', function(data){
 		var output = '';
 		output += '<h2>' + data.post.title + '</h2>';
